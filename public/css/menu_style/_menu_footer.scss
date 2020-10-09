@@ -1,0 +1,59 @@
+@use "../variables" as *;
+footer{
+    background-color: $second-color;
+    .subfooter{
+        background-image: url("../img/footer.png");
+        background-size: cover;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        a{
+            font-size: $font-size-p;
+        }
+    }
+    .containerFooter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        padding: 15px 0;
+        a{
+            display: block;
+            img{
+                width: 100px;
+                height: auto;
+            }
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 18px;
+                        &::before{
+                            height: 8px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        &:hover{
+                            color: $third-color;
+                            &::before{
+                                width: 1px;
+                            }
+                        }
+                    }
+                    &:first-child{
+                        a{  
+                            &:hover{
+                                color: $third-color;
+                                &::before{
+                                    width: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

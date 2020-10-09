@@ -1,0 +1,1308 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+p {
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.btnBasis a {
+  padding: 15px 20px;
+  background-color: #f2ce4f;
+  background-size: contain;
+  color: #1a2c4d;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  z-index: 0;
+}
+.btnBasis a i {
+  padding-left: 5px;
+}
+.btnBasis a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1a2c4d;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.btnBasis a:hover {
+  z-index: 0;
+  color: #f2ce4f;
+}
+.btnBasis a:hover::before {
+  width: 100%;
+}
+
+.headerHome {
+  width: 100%;
+}
+.headerHome .containerHeaderHome {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.headerHome .containerHeaderHome > * {
+  margin-left: 10px;
+}
+.headerHome .containerHeaderHome p {
+  color: white;
+}
+.headerHome .containerHeaderHome .facebook {
+  border-radius: 100%;
+  border: 3px solid #f2ce4f;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerHome .containerHeaderHome .facebook:hover {
+  background-color: white;
+  border-color: white;
+}
+.headerHome .containerHeaderHome .facebook:hover i {
+  color: #1a2c4d;
+}
+.headerHome .containerHeaderHome .facebook i {
+  font-size: 15px;
+  color: #f2ce4f;
+}
+.headerHome .containerHeaderHome .connexion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerHome .containerHeaderHome .connexion a {
+  padding: 7px 10px;
+  font-size: 15px;
+}
+.headerHome .containerHeaderHome .connexion a::before {
+  background-color: white;
+}
+.headerHome .containerHeaderHome .connexion a:hover {
+  z-index: 1;
+  color: #1a2c4d;
+}
+.headerHome .containerHeaderHome .connexion a:hover::before {
+  width: 100%;
+}
+
+footer {
+  background-color: #1a2c4d;
+}
+footer .subfooter {
+  background-image: url("../img/footer.png");
+  background-size: cover;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+footer .subfooter a {
+  font-size: 18px;
+}
+footer .containerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding: 15px 0;
+}
+footer .containerFooter a {
+  display: block;
+}
+footer .containerFooter a img {
+  width: 100px;
+  height: auto;
+}
+footer .containerFooter nav ul li a {
+  font-size: 18px;
+}
+footer .containerFooter nav ul li a::before {
+  height: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .containerFooter nav ul li a:hover {
+  color: white;
+}
+footer .containerFooter nav ul li a:hover::before {
+  width: 1px;
+}
+footer .containerFooter nav ul li:first-child a:hover {
+  color: white;
+}
+footer .containerFooter nav ul li:first-child a:hover::before {
+  width: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: flex;
+  align-items: center;
+}
+ul li a {
+  text-decoration: none;
+  color: #f2ce4f;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px 20px;
+  position: relative;
+  z-index: 9;
+}
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #f2ce4f;
+  transition: all 0.3s;
+  z-index: -1;
+}
+ul li a:hover {
+  color: #1a2c4d;
+}
+ul li a:hover::before {
+  width: 100%;
+}
+ul li:first-child a::before {
+  width: 0;
+}
+ul li:first-child a:hover {
+  color: #1a2c4d;
+}
+ul li:first-child a:hover::before {
+  width: 100%;
+}
+
+.menuFixe {
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+.menuFixe .menuCompte {
+  z-index: -2;
+  width: 100%;
+  background-color: #f2ce4f;
+  width: 100%;
+}
+.menuFixe .menuCompte .containerMenuCompte {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.menuFixe .menuCompte .containerMenuCompte nav ul li a {
+  color: #1a2c4d;
+  padding: 7px 10px;
+  font-size: 15px;
+}
+.menuFixe .menuCompte .containerMenuCompte nav ul li a.activecompte {
+  color: #f2ce4f;
+  padding: 7px 10px;
+  font-size: 15px;
+}
+.menuFixe .menuCompte .containerMenuCompte nav ul li a.activecompte::before {
+  width: 100%;
+  background-color: #1a2c4d;
+}
+.menuFixe .menuCompte .containerMenuCompte nav ul li a::before {
+  width: 0px;
+  background-color: #1a2c4d;
+}
+.menuFixe .menuCompte .containerMenuCompte nav ul li a:hover {
+  color: #f2ce4f;
+}
+.menuFixe .menuCompte .containerMenuCompte nav ul li a:hover::before {
+  width: 100%;
+}
+.menuFixe p {
+  color: #1a2c4d;
+}
+.menuFixe .containerMenuFixe {
+  padding: 15px 0;
+  position: relative;
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.menuFixe .containerMenuFixe .logodark {
+  position: absolute;
+  top: 0;
+  margin-top: 15px;
+}
+.menuFixe .containerMenuFixe .logodark a {
+  display: block;
+  height: 114px;
+  width: auto;
+  position: relative;
+}
+.menuFixe .containerMenuFixe .logodark a img {
+  width: auto;
+  height: 100%;
+}
+.menuFixe .containerMenuFixe .logodark a::before {
+  content: "";
+  z-index: -1;
+  height: 135px;
+  width: 135px;
+  border-radius: 300px;
+  background-color: white;
+  position: absolute;
+  top: -17px;
+  left: 32px;
+}
+.menuFixe .containerMenuFixe .d-flex-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.menuFixe .containerMenuFixe .d-flex-menu > * {
+  margin-bottom: 10px;
+}
+.menuFixe .containerMenuFixe .d-flex-menu > *:last-child {
+  margin-bottom: 0;
+}
+.menuFixe .containerMenuFixe .d-flex-menu .menuconnexion-menuFixe {
+  display: flex;
+  align-items: center;
+}
+.menuFixe .containerMenuFixe .d-flex-menu .menuconnexion-menuFixe > * {
+  margin-left: 10px;
+}
+.menuFixe .containerMenuFixe .d-flex-menu .menuconnexion-menuFixe .connexion {
+  margin-right: 0;
+}
+.menuFixe .containerMenuFixe .d-flex-menu .menuaccueil-menuFixe nav ul li a {
+  color: #1a2c4d;
+  padding: 7px 12px;
+}
+.menuFixe .containerMenuFixe .d-flex-menu .menuaccueil-menuFixe nav ul li a.active::before {
+  width: 100%;
+  background-color: #f2ce4f;
+}
+
+.invisible {
+  display: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+}
+header.headerHome {
+  position: absolute;
+}
+header .facebook {
+  border-radius: 100%;
+  border: 3px solid #f2ce4f;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+header .facebook:hover {
+  background-color: #1a2c4d;
+  border-color: #1a2c4d;
+}
+header .facebook i {
+  font-size: 15px;
+  color: #f2ce4f;
+}
+header .connexion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .connexion a {
+  padding: 7px 10px;
+  font-size: 15px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.containerJoueurs {
+  width: 100%;
+  display: flex;
+  padding-bottom: 50px;
+}
+.containerJoueurs .col1 {
+  width: 100%;
+}
+.containerJoueurs .col1 .listJoueurs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerJoueurs .col1 .listJoueurs .titleContent {
+  padding: 30px;
+  margin: 0;
+  padding-left: 42px;
+  margin-bottom: 30px;
+  display: block;
+}
+.containerJoueurs .col1 .listJoueurs .titleContent::before {
+  height: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.containerJoueurs .col1 .listJoueurs .joueurCard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.containerJoueurs .col1 .listJoueurs .joueurCard .oneJoueur {
+  width: 33%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-family: "Alegreya Sans", sans-serif;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 0px 2px 0px black;
+}
+.containerJoueurs .col1 .listJoueurs .joueurCard .oneJoueur .initiales {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+  height: 150px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #1a2c4d;
+  margin-bottom: 15px;
+}
+.containerJoueurs .col1 .listJoueurs .joueurCard .oneJoueur .joueur-delete form input {
+  padding: 7px 10px;
+  background-color: #f2ce4f;
+  background-size: contain;
+  color: #1a2c4d;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-flex;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  transition: all 0.5s;
+}
+.containerJoueurs .col1 .listJoueurs .joueurCard .oneJoueur .joueur-delete form input:focus {
+  outline: none;
+}
+.containerJoueurs .col1 .listJoueurs .joueurCard .oneJoueur .joueur-delete form input:hover {
+  background-color: #1a2c4d;
+  color: #f2ce4f;
+}
+.containerJoueurs .col1 .listJoueurs .joueurCard .propriete {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+.containerJoueurs .col1 .listJoueurs .joueurCard .propriete .nomPrenom {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.containerJoueurs .col1 .listJoueurs .joueurCard .propriete p {
+  color: white;
+  margin: 0 5px;
+}
+
+.containerEvents {
+  width: 100%;
+  display: flex;
+  padding-bottom: 50px;
+}
+.containerEvents .col1 {
+  width: 65%;
+  padding-right: 30px;
+}
+.containerEvents .col1 .listEvent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerEvents .col1 .listEvent .titleContent {
+  padding: 30px;
+  margin: 0;
+  padding-left: 42px;
+  margin-bottom: 30px;
+}
+.containerEvents .col1 .listEvent .titleContent::before {
+  height: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.containerEvents .col1 .listEvent .overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #5a5656;
+  /* Black fallback color */
+  background-color: rgba(117, 110, 110, 0.5);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.containerEvents .col1 .listEvent .oneEvent {
+  width: 100%;
+  padding: 15px 15px 15px 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-family: "Alegreya Sans", sans-serif;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.containerEvents .col1 .listEvent .oneEvent:last-child {
+  margin-bottom: 0;
+}
+.containerEvents .col1 .listEvent .oneEvent div p {
+  color: white;
+  margin: 0 5px;
+}
+.containerEvents .col1 .listEvent .oneEvent .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.containerEvents .col1 .listEvent .oneEvent .date .jour {
+  font-size: 40px;
+}
+.containerEvents .col1 .listEvent .oneEvent .eventCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  margin-left: 30px;
+}
+.containerEvents .col1 .listEvent .oneEvent .btnEvent form {
+  width: 150px;
+}
+.containerEvents .col1 .listEvent .oneEvent .btnEvent form .present {
+  background-color: #07B38B;
+}
+.containerEvents .col1 .listEvent .oneEvent .btnEvent form .absent {
+  background-color: #E3173F;
+}
+.containerEvents .col1 .listEvent .oneEvent .btnEvent form .hidden {
+  display: none;
+}
+.containerEvents .col1 .listEvent .oneEvent .btnEvent form input {
+  width: 100%;
+  padding: 7px 10px;
+  background-color: #f2ce4f;
+  background-size: contain;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  transition: all 0.5s;
+}
+.containerEvents .col1 .listEvent .oneEvent .btnEvent form input:focus {
+  outline: none;
+}
+.containerEvents .col1 .listEvent .oneEvent .btnEvent form input:hover {
+  background-color: #1a2c4d;
+  color: #f2ce4f;
+}
+.containerEvents .col1 .listEvent .oneEvent .btnEvent form input:last-child {
+  margin-top: 5px;
+}
+.containerEvents .col1 .listEvent .oneEvent .nomPrenom {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.containerEvents .col2 {
+  width: 35%;
+}
+.containerEvents .col2 img {
+  width: 100%;
+  height: auto;
+}
+.containerEvents .col2 form {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  border-left: 1px solid #f2ce4f;
+  border-top: 1px solid #f2ce4f;
+}
+.containerEvents .col2 form .titleContent {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  padding-left: 12px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.containerEvents .col2 form .titleContent::before {
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.containerEvents .col2 form label {
+  margin: 10px 0;
+}
+.containerEvents .col2 form input {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #1a2c4d;
+  padding: 5px 5px;
+  width: 100%;
+}
+.containerEvents .col2 form input:focus {
+  outline: none;
+}
+.containerEvents .col2 form button {
+  cursor: pointer;
+  margin: 15px 0 15px 1px;
+  border: none;
+  padding: 7px 10px;
+  background-color: #f2ce4f;
+  background-size: contain;
+  color: #1a2c4d;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  z-index: 0;
+}
+.containerEvents .col2 form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1a2c4d;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.containerEvents .col2 form button:hover {
+  z-index: 0;
+  color: #f2ce4f;
+}
+.containerEvents .col2 form button:hover::before {
+  width: 100%;
+}
+.containerEvents .col2 form button:focus {
+  outline: none;
+}
+.containerEvents .col2 #ajoutEvent {
+  cursor: pointer;
+  padding: 15px;
+  color: transparent;
+  font-size: 20px;
+  border-top: 1px solid #f2ce4f;
+  border-left: 1px solid #f2ce4f;
+  text-align: center;
+  position: relative;
+}
+.containerEvents .col2 #ajoutEvent::before {
+  content: "Ajouter un évènement";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerEvents .col2 #ajoutEvent:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.classPresent {
+  background-color: #07B38B;
+}
+
+.containerInfos {
+  width: 100%;
+  display: flex;
+  padding-bottom: 50px;
+}
+.containerInfos .col1 {
+  width: 65%;
+  padding-right: 30px;
+}
+.containerInfos .col1 .listInfos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerInfos .col1 .listInfos .joueurCard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.containerInfos .col1 .listInfos .joueurCard .oneJoueur {
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-family: "Alegreya Sans", sans-serif;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 1px 0px 2px 0px black;
+}
+.containerInfos .col1 .listInfos .joueurCard .oneJoueur:last-child {
+  margin-bottom: 0;
+}
+.containerInfos .col1 .listInfos .joueurCard .oneJoueur .initiales {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #1a2c4d;
+}
+.containerInfos .col1 .listInfos .joueurCard .oneJoueur .propriete {
+  margin-bottom: 15px;
+  align-items: center;
+  display: flex;
+}
+.containerInfos .col1 .listInfos .joueurCard .oneJoueur .propriete:last-child {
+  margin-bottom: 0;
+}
+.containerInfos .col1 .listInfos .joueurCard .oneJoueur .propriete .nomPrenom {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.containerInfos .col1 .listInfos .joueurCard .oneJoueur .propriete p {
+  color: white;
+  margin: 0 5px;
+  font-size: 20px;
+}
+.containerInfos .col2 {
+  width: 35%;
+}
+.containerInfos .col2 img {
+  width: 100%;
+  height: auto;
+}
+.containerInfos .col2 #formUpdate {
+  display: flex;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  border-left: 1px solid #f2ce4f;
+  border-top: 1px solid #f2ce4f;
+}
+.containerInfos .col2 #formUpdate .titleContentUpdate {
+  cursor: pointer;
+  color: white;
+  display: inline-flex;
+  text-transform: uppercase;
+  font-size: 25px;
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 15px;
+}
+.containerInfos .col2 #formUpdate .titleContentUpdate::before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f2ce4f;
+}
+.containerInfos .col2 #formUpdate label {
+  margin: 10px 0;
+}
+.containerInfos .col2 #formUpdate input {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #1a2c4d;
+  padding: 5px 5px;
+  width: 100%;
+}
+.containerInfos .col2 #formUpdate input:focus {
+  outline: none;
+}
+.containerInfos .col2 #formUpdate select {
+  width: 100%;
+  padding: 10px 5px;
+}
+.containerInfos .col2 #formUpdate button {
+  cursor: pointer;
+  margin: 15px 0 15px 1px;
+  border: none;
+  padding: 7px 10px;
+  background-color: #f2ce4f;
+  background-size: contain;
+  color: #1a2c4d;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  z-index: 0;
+}
+.containerInfos .col2 #formUpdate button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1a2c4d;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.containerInfos .col2 #formUpdate button:hover {
+  z-index: 0;
+  color: #f2ce4f;
+}
+.containerInfos .col2 #formUpdate button:hover::before {
+  width: 100%;
+}
+.containerInfos .col2 #formUpdate button:focus {
+  outline: none;
+}
+.containerInfos .col2 #updateInfos {
+  cursor: pointer;
+  padding: 15px;
+  color: transparent;
+  font-size: 20px;
+  border-top: 1px solid #f2ce4f;
+  border-left: 1px solid #f2ce4f;
+  text-align: center;
+  position: relative;
+}
+.containerInfos .col2 #updateInfos::before {
+  content: "Modifier mes infos";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerInfos .col2 #updateInfos:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.p-i-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.textContent {
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 0 35px;
+  flex-grow: 1;
+}
+.textContent h3 {
+  padding: 25px 0;
+  font-size: 22px;
+}
+.textContent p {
+  margin-bottom: 10px;
+}
+.textContent .lastP {
+  margin-bottom: 20px;
+}
+
+.picture {
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.picture img {
+  height: 100%;
+}
+
+.titleCategory {
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.cart {
+  margin: 30px auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  width: 49%;
+}
+.cart p {
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 18px;
+}
+.cart iframe {
+  margin-top: 20px;
+}
+
+.contactTraining {
+  margin: 50px 0;
+}
+
+.spirit {
+  margin-bottom: 50px;
+  padding: 50px 0;
+  background-image: url(../img/spirit.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spirit .textContent {
+  flex-grow: 0;
+  background-color: rgba(26, 44, 77, 0.9);
+  width: 40%;
+  padding: 30px;
+}
+
+.lineOpacity {
+  width: 100%;
+  height: 38%;
+  position: absolute;
+  top: 43%;
+  left: 0;
+  background-color: #2e3f5d;
+}
+
+.connexionForm {
+  width: 60%;
+}
+.connexionForm form {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.connexionForm form h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.connexionForm form #connecteToi {
+  cursor: pointer;
+}
+.connexionForm form #inscrisToi {
+  cursor: pointer;
+}
+.connexionForm form .msgErreur {
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 2px solid #D91136;
+}
+.connexionForm form p span a {
+  text-decoration: none;
+  color: white;
+}
+
+.imgContact {
+  width: 40%;
+  height: auto;
+}
+.imgContact img {
+  width: 100%;
+}
+
+.flexContact {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.flexContact form {
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  margin-left: 30px;
+}
+.flexContact form .titleContent {
+  background-color: transparent;
+  padding: 0;
+  padding-left: 12px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.flexContact form .titleContent::before {
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.flexContact form label {
+  margin: 10px 0;
+}
+.flexContact form input {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #1a2c4d;
+  padding: 5px 5px;
+  width: 100%;
+}
+.flexContact form input:focus {
+  outline: none;
+}
+.flexContact form textarea {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #1a2c4d;
+  width: 100%;
+}
+.flexContact form textarea:focus {
+  outline: none;
+}
+.flexContact form .onField {
+  display: flex;
+  align-items: center;
+}
+.flexContact form .onField input {
+  margin: 0 5px 0 15px;
+  width: 15px;
+  height: 15px;
+}
+.flexContact form .onField .firstChild {
+  margin-left: 0px;
+}
+.flexContact form .onField label {
+  margin: 0;
+}
+.flexContact form select {
+  width: 100%;
+  height: 35px;
+}
+.flexContact form select:focus {
+  outline: none;
+}
+.flexContact form button {
+  cursor: pointer;
+  margin: 15px 0 15px 1px;
+  border: none;
+  padding: 7px 10px;
+  background-color: #f2ce4f;
+  background-size: contain;
+  color: #1a2c4d;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  z-index: 0;
+}
+.flexContact form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1a2c4d;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.flexContact form button:hover {
+  z-index: 0;
+  color: #f2ce4f;
+}
+.flexContact form button:hover::before {
+  width: 100%;
+}
+.flexContact form button:focus {
+  outline: none;
+}
+
+.club {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 50px;
+  position: relative;
+}
+.club .victory {
+  position: absolute;
+  top: 15%;
+  left: -3%;
+  width: 60%;
+  height: auto;
+  z-index: 1;
+}
+.club .clubContent {
+  position: relative;
+  background-color: #384765;
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 45%;
+  padding: 35px;
+}
+.club .clubContent h2 {
+  font-family: "Oswald", sans-serif;
+  background-color: transparent;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 0;
+  position: relative;
+}
+.club .clubContent h2::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.club .clubContent p {
+  margin-bottom: 10px;
+}
+.club .clubContent .lastP {
+  margin-bottom: 20px;
+}
+
+.comptebloque {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.comptebloque h3 {
+  font-size: 25px;
+  color: white;
+  padding: 15px;
+}
+.comptebloque h4 {
+  color: white;
+  font-size: 20px;
+}
+.comptebloque p {
+  color: white;
+  padding-top: 15px;
+}
+.comptebloque p a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.comptebloque p a::before {
+  transition: all 0.5s;
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f2ce4f;
+  width: 0;
+  height: 1px;
+}
+.comptebloque p a:hover {
+  color: #f2ce4f;
+}
+.comptebloque p a:hover::before {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.accueil {
+  background-image: url("../img/accueil.jpg");
+  background-size: cover;
+  overflow: hidden;
+  width: auto;
+  height: 100%;
+}
+.accueil .containerAccueil {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accueil .containerAccueil .logo_big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.accueil .containerAccueil .logo_big img {
+  width: 550px;
+  height: auto;
+}
+.accueil .containerAccueil .title {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+  display: inline;
+}
+.accueil .containerAccueil .title--big {
+  font-size: 40px;
+}
+.accueil .containerAccueil .title--little {
+  font-size: 22px;
+  margin: 15px 0 25px 0;
+}
+.accueil .containerAccueil .title .point {
+  margin: 5px;
+}
+
+.containerContent {
+  width: 100%;
+  background-color: #1a2c4d;
+  padding-top: 170px;
+  position: relative;
+}
+.containerContent .containerWidth {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContent {
+  color: white;
+  display: inline-flex;
+  text-transform: uppercase;
+  font-size: 25px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px 30px 30px 42px;
+  margin: 0px auto 50px auto;
+}
+.titleContent::before {
+  content: "";
+  height: 24px;
+  width: 2px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: #f2ce4f;
+}
+
+/*# sourceMappingURL=style.css.map */

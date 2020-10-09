@@ -1,0 +1,106 @@
+@use "variables" as *;
+@import "basic";
+@import "buttons";
+@import "menu_style/menu_header_home";
+@import "menu_style/menu_footer";
+@import "menu_style/menu_fixe";
+@import "menu_style/menu_connexion";
+@import "pages/lesjoueurs";
+@import "pages/lesevents";
+@import "pages/monCompte";
+@import "pages/training_ultimate";
+@import "pages/connexion";
+@import "pages/inscri_contact";
+@import "pages/leclub";
+@import "pages/comptebloque";
+
+*{
+    box-sizing: border-box;
+}
+.accueil{
+    background-image: url("../img/accueil.jpg");
+    background-size: cover;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    .containerAccueil{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .logo_big{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            img{
+                width: 550px;
+                height: auto;
+            }
+        }
+        .title{
+            font-weight: $font-weight-title;
+            margin: 0;
+            text-transform: uppercase;
+            color:$third-color;
+            display: inline; 
+            &--big{
+                font-size: 40px;
+            }
+            &--little{
+                font-size: $font-size-title; 
+                margin: 15px 0 25px 0;
+                
+            }
+            .point{
+                margin: 5px;
+            }
+        }
+    }   
+}
+.containerContent{
+    width: 100%;
+    background-color: $second-color;
+    padding-top: 170px;
+    position: relative;
+    .containerWidth{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.titleContent{
+    color: $third-color;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: $font-size-btitle;
+    position: relative;
+    background-color: $tc-opacity;
+    padding: 30px 30px 30px 42px;
+    margin: 0px auto 50px auto;
+    &::before{
+        content: "";
+        height: 24px;
+        width: 2px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background-color: $first-color;
+    }
+}
+
+
+
+
+
+
+
+
+
+

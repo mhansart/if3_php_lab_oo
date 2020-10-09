@@ -1,0 +1,45 @@
+@use "../variables" as *;
+
+.invisible{
+    display: none;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    &.headerHome{
+        position: absolute;
+    }
+    .facebook{
+        border-radius: 100%;
+        border: 3px solid $first-color;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        &:hover{
+            background-color: $second-color;
+            border-color: $second-color;
+        }
+        i{
+            font-size: 15px;
+            color: $first-color;
+        }
+    }
+    .connexion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            padding: 7px 10px;
+            font-size: 15px;
+        }
+    }
+}
+.bold{
+    font-weight: $font-weight-bold;
+}

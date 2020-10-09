@@ -1,0 +1,185 @@
+@use "../variables" as *;
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li{
+        a{
+            text-decoration: none;
+            color: $first-color;
+            text-transform: uppercase;
+            font-size: $font-size-menu;
+            padding: 15px 20px;
+            position: relative;
+            z-index: 9;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1px;
+                height: 100%;
+                background-color: $first-color;
+                transition: all 0.3s;
+                z-index: -1;
+            }
+            &:hover{
+                color: $second-color;
+                &::before{
+                    width: 100%;
+                }
+            }
+        }
+        
+        &:first-child{
+            a{
+                &::before{
+                    width: 0;
+                }
+                
+                &:hover{
+                    color: $second-color;
+                    &::before{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        display: flex;
+        align-items: center;
+    }
+}
+.menuFixe{
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    background-color: $third-color;
+    .menuCompte{
+        z-index: -2;
+        width: 100%;
+        background-color: $first-color;
+        width: 100%;
+        .containerMenuCompte{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: flex-end;
+            nav{
+                ul{
+                    li{
+                        a{
+                            &.activecompte{
+                                color: $first-color;
+                                padding: 7px 10px;
+                                font-size: 15px;
+                                &::before{
+                                    width: 100%;
+                                    background-color: $second-color;
+                                }
+                            }
+                            color: $second-color;
+                            padding: 7px 10px;
+                            font-size: 15px;
+                            &::before{
+                                width: 0px;
+                                background-color: $second-color;
+                            }
+                            &:hover{
+                                color: $first-color;
+                                &::before{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    p{
+        color: $second-color;
+    }
+    .containerMenuFixe{
+        padding: 15px 0;
+        position: relative;
+        margin: auto;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .logodark{
+            position: absolute;
+            top: 0;
+            margin-top: 15px;
+            a{
+                display: block;
+                height: 114px;
+                width: auto;
+                position: relative;
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+                &::before{
+                    content: "";
+                    z-index: -1;
+                    height: 135px;
+                    width: 135px;
+                    border-radius: 300px;
+                    background-color:$third-color;
+                    position: absolute;
+                    top: -17px;
+                    left: 32px;
+                }
+            }
+        }
+        .d-flex-menu{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            &>*{
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            
+            .menuconnexion-menuFixe{
+                &>*{
+                    margin-left: 10px;
+                }
+                
+                display: flex;
+                align-items: center;
+                .connexion{
+                    margin-right: 0;
+                }
+            }
+            .menuaccueil-menuFixe{
+                nav{
+                    ul{
+                        li{
+                            a{
+                                &.active{
+                                    &::before{
+                                        width: 100%;
+                                        background-color: $first-color;
+                                    }
+                                }
+                                color: $second-color;
+                                padding:7px 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
